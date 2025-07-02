@@ -1,0 +1,34 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+}
+#game {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  display: block;
+  background: #000;
+}
+#hud {
+  position: fixed;
+  top: 10px; left: 50%; transform: translateX(-50%);
+  color: #fff;
+  font-family: monospace;
+  z-index: 10;
+  text-align: center;
+  width: 400px;
+  pointer-events: none;
+  user-select: none;
+}
+#oxygen { font-size: 1.2em; margin-bottom: 6px; }
+#objective { font-size: 1.1em; margin-bottom: 8px; }
+#message {
+  color: #ff4d4d;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 16px;
+  text-shadow: 0 0 8px #000, 0 0 4px #fff;
+}
